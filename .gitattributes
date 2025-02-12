@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
+# Ensure all text files use LF line endings
 * text=auto
+
+# Ignore Jupyter Notebook output cells in diffs
+*.ipynb diff=jupyternotebook
+
+# Treat CSV files as text for proper diffing
+*.csv text
+
+# Mark large binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.zip binary
+*.tar.gz binary
+
